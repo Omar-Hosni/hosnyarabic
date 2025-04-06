@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
-import Homepage from './pages/Home/homepage';
+import Homepage from './pages/Home/HomePage';
 import BahrainPage from './pages/Bahrain/BahrainPage';
 import EgyptPage from './pages/Egypt/EgyptPage';
 import KSAPage from './pages/KSA/KSAPage';
