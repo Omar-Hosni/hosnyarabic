@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 
 const HowToRegister = () => {
   return (
-    <section className="py-20 bg-sky-50">
+    <section className="py-20 bg-sky-50 mt-20">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

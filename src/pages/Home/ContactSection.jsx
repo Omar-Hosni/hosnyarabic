@@ -87,7 +87,7 @@ function ContactSection() {
                 placeholder="الاسم"
                 value={formData.name}
                 onChange={handleChange}
-                className="text-right px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+                className="text-right text-black px-4 py-3 rounded-lg focus:outline-none focus:border-sky-500 border-2 border-black"
               />
               <input
                 type="email"
@@ -95,7 +95,7 @@ function ContactSection() {
                 placeholder="البريد الإلكتروني"
                 value={formData.email}
                 onChange={handleChange}
-                className="text-right px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+                className="text-right text-black px-4 py-3 rounded-lg focus:outline-none focus:border-sky-500 border-2 border-black"
               />
               <textarea
                 name="message"
@@ -103,7 +103,7 @@ function ContactSection() {
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                className="text-right px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+                className="text-right text-black px-4 py-3 rounded-lg focus:outline-none focus:border-sky-500 border-2 border-black"
               ></textarea>
               <button
                 type="submit"

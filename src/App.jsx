@@ -12,7 +12,7 @@ import HowToRegister from './pages/Register/HowToRegister';
 function App() {
   return (
     <Router>
-      <div className="font-readex bg-white dark:bg-gray-900 dark:text-white min-h-screen">
+      <div className="font-readex bg-white min-h-screen">
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />

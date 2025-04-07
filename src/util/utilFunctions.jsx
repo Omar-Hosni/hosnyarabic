@@ -25,3 +25,7 @@ export const redirectToTelegram = () => {
     const telegramUrl = `https://t.me/HosnyEgypt`;
     window.open(telegramUrl, "_blank"); // Opens in a new tab
   };
+
+export const redirectToHowToRegister = (navigate) =>{
+  navigate('/how-to-register')
+}

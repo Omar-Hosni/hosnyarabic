@@ -3,10 +3,13 @@ import { motion } from 'framer-motion';
 import hosny1 from '../../assets/hosny1.jpg'
 import hosny2 from '../../assets/hosny2.jpg'
 import Flag from 'react-world-flags';
+import {redirectToHowToRegister} from '../../util/utilFunctions';
+import { useNavigate } from 'react-router-dom';
 
 function HeroSection() {
+  const navigate = useNavigate()
   return (
-    <section className="relative bg-gradient-to-br from-white via-sky-50 to-sky-100 py-20 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-white via-sky-50 to-sky-100 py-20 overflow-hidden mt-20">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -19,7 +22,7 @@ function HeroSection() {
              حسني سليمان 
             </h1>
             <p className="typewriter text-gray-600 mb-6 text-lg leading-relaxed">
-            مدرس عربي لمقررات مصر , السعودية والبحرين
+            أستاذ لغة عربية لمقررات مصر, السعودية والبحرين
             </p>
             <div className="flex gap-6 justify-end mb-6">
                 <Flag code="EG" className="w-12 h-8 object-contain" />
@@ -27,7 +30,11 @@ function HeroSection() {
                 <Flag code="BH" className="w-12 h-8 object-contain" />
             </div>
             <div className="flex gap-4 justify-end">
-              <button className="bg-sky-600 hover:bg-sky-700 text-black font-medium px-6 py-2 rounded-lg transition">
+              <button 
+              onClick={()=>{
+                redirectToHowToRegister(navigate)
+              }}
+              className="bg-sky-600 hover:bg-sky-700 text-black font-medium px-6 py-2 rounded-lg transition">
                 ابدأ الآن
               </button>
               <button 

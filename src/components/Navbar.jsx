@@ -29,7 +29,7 @@ function Navbar() {
   ];
 
   return (
-    <header className="w-full shadow-sm sticky top-0 z-50 bg-white dark:bg-gray-900 dark:text-white">
+    <header className="w-full shadow-sm fixed top-0 z-50 bg-white dark:bg-gray-900 dark:text-black">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <p
           onClick={()=>{
