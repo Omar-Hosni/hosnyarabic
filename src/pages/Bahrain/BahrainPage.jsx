@@ -72,8 +72,8 @@ function BahrainPage() {
             <p className="text-gray-600 text-sm">توفير دروس خصوصية أو تدريس جماعي حسب احتياجات الطالب.</p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-md">
-            <h3 className="text-xl font-semibold text-sky-800 mb-4">التدريس الجامعي لجميع مواد اللغة العربية</h3>
-            <p className="text-gray-600 text-sm">تدريس شامل لجميع مواد اللغة العربية في المراحل الجامعية.</p>
+            <h3 className="text-xl font-semibold text-sky-800 mb-4">التدريس الجامعي والثانوي لجميع مواد اللغة العربية</h3>
+            <p className="text-gray-600 text-sm">تدريس شامل لجميع مواد اللغة العربية في المراحل الجامعية و الثانوية.</p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-md">
             <h3 className="text-xl font-semibold text-sky-800 mb-4">استشارات في البحث والمراجع للرسائل والنشر</h3>
