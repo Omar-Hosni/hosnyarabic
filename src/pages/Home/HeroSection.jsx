@@ -44,7 +44,7 @@ function HeroSection() {
               حسني سليمان
             </h1>
             <p className="typewriter text-gray-600 mb-6 text-lg leading-relaxed">
-              أستاذ لغة عربية لمقررات مصر, السعودية والبحرين
+              أستاذ لغة عربية لمقررات مصر , السعودية والبحرين
             </p>
             <div className="flex gap-6 justify-end mb-6">
               <Flag code="EG" className="w-12 h-8 object-contain" />

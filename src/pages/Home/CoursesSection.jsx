@@ -5,18 +5,18 @@ import { Users, Clock } from 'lucide-react';
 const courses = [
   {
     title: 'البحرين',
-    description: 'خطوتك الأولى للوصول إلى درجة 100%',
+    description: 'شرح وتدريس كلل مقررات الثانوية والجامعة',
     students: '300+',
     duration: '6 أسابيع'
   },
   {
     title: 'مصر',
-    description: 'نماذج محاكية بدقة عالية + شرح الكتاب',
+    description: 'شرح نحو, صرف, بلاغة, والنصوص المقررة',
     students: '500+',
     duration: '8 أسابيع'
   },
   {
-    title: 'السعودية (قدرات وتحصيلي)',
+    title: 'السعودية (القدرات - المقرر اللفظي)',
     description: 'أسرع وأسهل الطرق لحل الأسئلة',
     students: '200+',
     duration: '4 أسابيع'

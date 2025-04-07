@@ -10,6 +10,8 @@ import KSAPage from './pages/KSA/KSAPage';
 import CoursesPage from './pages/Courses/CoursesPage';
 import HowToRegister from './pages/Register/HowToRegister';
 
+import ErrorPage from './pages/NotFound/ErrorPage';
+
 function App() {
   return (
     <Router>
@@ -21,6 +23,7 @@ function App() {
         </Helmet>
         <Navbar />
         <Routes>
+          <Route path="*" element={<ErrorPage />} />
           <Route path="/" element={<Homepage />} />
           <Route path="/bahrain" element={<BahrainPage />} />
           <Route path="/egypt" element={<EgyptPage />} />

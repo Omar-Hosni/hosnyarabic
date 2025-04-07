@@ -24,7 +24,7 @@ function AboutSection() {
             مع خبرة تمتد لأكثر من 27 عامًا، نعمل على تبسيط مفاهيم القدرات وتقديمها بطريقة عملية
             ومناسبة لجميع المستويات لتحقيق النجاح والتفوق.
           </p>
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="mt-8 flex flex-row justify-center gap-20">
             <div className="flex items-center gap-4">
               <BookOpen className="w-8 h-8 text-sky-600" />
               <div>

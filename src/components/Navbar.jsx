@@ -26,11 +26,12 @@ function Navbar() {
     { label: 'التواصل', href: '/contact' },
     { label: 'الكورسات', href: '/courses' },
     { label: 'خطوات التسجيل', href: '/how-to-register' },
+    { label: 'الرئيسية', href: '/' }
   ];
 
   return (
-    <header className="w-full shadow-sm fixed top-0 z-50 bg-white dark:bg-gray-900 dark:text-black">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+    <header className="homepage-container w-full shadow-sm fixed top-0 z-50 bg-white dark:bg-gray-900 dark:text-black">
+      <div className="mx-auto px-4 py-3 flex items-center justify-between">
         <p
           onClick={()=>{
             window.location.replace("https://t.me/HosnyEgypt")

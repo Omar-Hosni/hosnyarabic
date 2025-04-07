@@ -7,7 +7,7 @@ import ContactSection from './ContactSection';
 
 function Homepage() {
   return (
-    <div className="bg-white font-readex">
+    <div className="bg-white font-readex flex flex-col justify-center ">
       <HeroSection />
       <CoursesSection />
       <VideosSection />

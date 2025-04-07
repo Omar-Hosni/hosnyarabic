@@ -17,7 +17,7 @@ function VideosSection() {
           transition={{ duration: 0.4 }}
           className="text-3xl font-bold text-center text-sky-800 mb-12"
         >
-          فيديوهات تعليمية
+          تماذج لفيديوهات شرح
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {videos.map((src, index) => (
