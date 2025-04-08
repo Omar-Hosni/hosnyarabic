@@ -32,7 +32,8 @@ function HeroSection() {
           {JSON.stringify(personSchema)}
         </script>
       </Helmet>
-      <div className="container mx-auto px-6">
+
+      <div className="container mx-auto px-6 ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -40,9 +41,9 @@ function HeroSection() {
           className="grid grid-cols-1 md:grid-cols-2 items-center gap-12"
         >
           <div className="text-right">
-            <h1 className="text-4xl md:text-5xl font-bold text-sky-800 mb-4 leading-snug">
+            <p className="text-4xl md:text-5xl font-bold text-sky-800 mb-4 leading-snug">
               حسني سليمان
-            </h1>
+            </p>
             <p className="typewriter text-gray-600 mb-6 text-lg leading-relaxed">
               أستاذ لغة عربية لمقررات مصر , السعودية والبحرين
             </p>

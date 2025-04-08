@@ -44,14 +44,13 @@ function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 items-center text-right font-medium">
           {links.map((link, idx) => (
-            
             <button key={idx} onClick={()=>{
                 if(idx === 3){
                     redirectToContact(location, navigate)
                 }else{
                     navigate(`${link.href}`)
                 }
-            }} className="hover:text-sky-600 transition">
+            }} className="hover:text-sky-600 transition ">
               {link.label}
             </button>
           ))}
