@@ -51,6 +51,42 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'A Thuluth';
+  src: url('/fonts/thuluth/thuluth-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'D Thuluth';
+  src: url('/fonts/thuluth/thuluth-fancy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sahel Bold';
+  src: url('/fonts/shael/sahel-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.a-thuluth-font {
+  font-family: 'A Thuluth', serif;
+}
+
+.d-thuluth-font {
+  font-family: 'D Thuluth', serif;
+}
+
+.sahel-bold-font {
+  font-family: 'Sahel Bold', serif;
+}
+
+.spacing-between-words {
+  word-spacing: 1.5rem;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

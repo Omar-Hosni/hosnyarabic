@@ -10,14 +10,14 @@ import CourseCard from '../../components/CourseCard';
 const courses = [
   {
     title: 'البحرين',
-    description: 'شرح وتدريس كلل مقررات الثانوية والجامعة',
+    description: 'شروح لدروس النحو والصرف والبلاغة والنصوص المقررة لكل المراحل الثانوية والإعدادية',
     students: '300+',
     duration: '6 أسابيع',
     redirect: '/bahrain'
   },
   {
     title: 'مصر',
-    description: 'شرح نحو, صرف, بلاغة, والنصوص المقررة',
+    description: 'شروح لدروس النحو والصرف والبلاغة والنصوص المقررة لكل المراحل الثانوية والإعدادية',
     students: '500+',
     duration: '8 أسابيع',
     redirect: '/egypt'

@@ -78,7 +78,7 @@ function BahrainPage() {
   return (
     <section className="py-20 bg-sky-50 mt-20" dir="rtl">
       <motion.div 
-      className="container mx-auto px-6"
+      className="container mx-auto px-6 scale:95"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}

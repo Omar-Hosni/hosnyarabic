@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet'; // Import React Helmet
 import hosny1 from '../../assets/hosny1.jpg';
 import hosny4 from '../../assets/hosny4.jpg';
+import hosny6 from '../../assets/hosny6.png'
 import Flag from 'react-world-flags';
 import { redirectToHowToRegister } from '../../util/utilFunctions';
 import { useNavigate } from 'react-router-dom';
@@ -18,7 +19,7 @@ function HeroSection() {
     "@type": "Person",
     "name": "حسني سليمان",
     "url": "https://hosnyarabicteaching.com/",  // Replace with the actual URL
-    "image": hosny1,  // Link to the image of حسني سليمان
+    "image": hosny6,  // Link to the image of حسني سليمان
     "description": "أستاذ لغة عربية لمقررات مصر, السعودية والبحرين.",
     "sameAs": [
       "https://www.x.com/Hosny76_EGYPT", // Replace with actual social media URLs if applicable
@@ -49,7 +50,7 @@ function HeroSection() {
         >
         <div className="relative container container-contain">
             <motion.img
-              src={hosny4}
+              src={hosny6}
               alt="Hero Illustration"
               className="w-full max-w-md mx-auto drop-shadow-xl scale-85 rounded-xl"
               initial={{ scale: 0.9 }}
@@ -58,8 +59,8 @@ function HeroSection() {
             />
           </div>
           <div className="container" dir='rtl'>
-            <p className="legend-header text-4xl md:text-5xl font-bold text-sky-300 mb-4 leading-snug">
-              حسني سليمان
+            <p  className="spacing-between-words d-thuluth-font tracking-normal legend-header text-4xl md:text-8xl font-bold text-sky-200 mb-4 leading-snug">
+              حُسني سُليمان
             </p>
             <p className="text-gray-200 mb-6 text-medium leading-relaxed">
               <span className="block md:inline">

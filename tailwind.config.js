@@ -5,7 +5,12 @@ module.exports = {
       './src/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          decoThuluth: ['DecoType Thuluth II', 'serif'],
+          aThuluth: ['A Thuluth', 'serif'],
+        },
+      },
     },
     plugins: [],
   }
