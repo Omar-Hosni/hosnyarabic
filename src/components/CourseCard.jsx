@@ -3,7 +3,7 @@ import { redirectToTelegram } from '../util/utilFunctions';
 
 function CourseCard({ image, name, description, price, extra, dateTime, status }) {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden outline-1 hover:scale-110 transition">
     {status && status.length > 0 ? (
       <div className="relative">
         <img src={image} alt={name} className="w-full h-75 object-scale-down" />
@@ -16,9 +16,9 @@ function CourseCard({ image, name, description, price, extra, dateTime, status }
       ):(
       <img src={image} alt={name} className="w-full h-75 object-scale-down" />
       )}
-      <div className="p-6">
+      <div className="p-6" dir='rtl'>
         <h3 className="text-2xl font-semibold text-sky-800 mb-3">{name}</h3>
-        <p className="text-gray-600 text-sm mb-4">{description}</p>
+        <p className="text-gray-600 text-medium mb-4">{description}</p>
         <div className="flex gap-4 mb-4">
           {/* Price and Extra as Tags */}
           <span className="px-4 py-1 text-sm text-white bg-sky-600 rounded-full">{price}</span>

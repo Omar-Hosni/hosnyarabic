@@ -2,6 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Users, Clock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import CoursesSmallCard from '../../components/CoursesSmallCard';
+import aroodlogo from '../../assets/aroodbackground.png'
+import researchlogo from '../../assets/researchlogo.png'
+import CourseCard from '../../components/CourseCard';
 
 const courses = [
   {
@@ -27,10 +31,30 @@ const courses = [
   }
 ];
 
+const advancedCourses = [
+  {
+    image: aroodlogo, // Replace with the actual import of 'arab101' image
+    name: "علم العَرُوض",
+    description: "هو علم يُعرف به صحيح أوزان الشعر العربيّ من فاسدها وما يعتريها من الزحافات والعلل.. وهو ميزان الشعر العربيّ، به يعرف مكسوره من موزونه. تمامًا كما أن النحو معيارُ الكلام، وبه يعرف مُعربُه من ملحونِه.",
+    price:"5DB لكل حصة",
+    extra:"25BD لكل المذكرات ونماذج الحل",
+    dateTime: 'متاحة طوال العام',
+  },
+  {
+    image: researchlogo, // Replace with the actual import of 'arab101' image
+    name: "قسم الأبحاث الأكاديمية",
+    description: "استشارات في البحث والمراجع للرسائل والنشر",
+    price:"5DB لكل حصة",
+    extra:"25BD لكل المذكرات ونماذج الحل",
+    dateTime: 'متاحة طوال العام',
+  }
+]
+
 function CoursesSection() {
   const navigate = useNavigate()
   return (
-    <section className="py-20 bg-white">
+
+    <section className="w-full py-10 animated-background bg-gradient-to-r from-sky-200 via-blue-200 to-cyan-100">
       <div className="container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0 }}
@@ -38,33 +62,40 @@ function CoursesSection() {
           transition={{ duration: 0.4 }}
           className="text-3xl font-bold text-center text-sky-700 mb-12"
         >
-          كورسات حسني
+          كورسات أستاذ حسني
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {courses.map((course, index) => (
-            <motion.div
+            <CoursesSmallCard course={course} index={index}/>
+          ))}
+        </div>
+      </div>
+
+
+      <div className="flex flex-col container mx-auto px-6 py-10 max-w-6xl">
+        <div>
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.4 }}
+            className="text-3xl font-bold text-center text-sky-700 mb-12"
+          >
+            دورات متقدّمة متخصصة للمراحل الجامعية
+          </motion.h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 scale-90">
+          {advancedCourses.map((course, index) => (
+            <CourseCard
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
-              className="bg-sky-50 border border-sky-100 rounded-xl shadow p-6 hover:cursor-pointer hover:scale-110 transition"
-              onClick={()=>{
-                navigate(course.redirect)
-              }}
-            >
-              <h3 className="text-xl font-bold text-sky-800 mb-2 text-right">{course.title}</h3>
-              <p className="text-gray-600 mb-4 text-right">{course.description}</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <div className="flex items-center gap-1">
-                  <Users className="w-4 h-4" />
-                  <span>{course.students}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <Clock className="w-4 h-4" />
-                  <span>{course.duration}</span>
-                </div>
-              </div>
-            </motion.div>
+              image={course.image}
+              name={course.name}
+              description={course.description}
+              price={course.price}
+              extra={course.extra}
+              dateTime={course.dateTime}
+              status={course.status}
+            />
           ))}
         </div>
       </div>

@@ -4,8 +4,8 @@ import { BookOpen, Users } from 'lucide-react';
 
 function AboutSection() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-6">
+    <section className="py-20 animated-background bg-gradient-to-r from-sky-200 via-blue-200 to-cyan-100">
+      <div className=" container mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -36,7 +36,7 @@ function AboutSection() {
               <Users className="w-8 h-8 text-sky-600" />
               <div>
                 <h3 className="font-semibold text-sky-700">عدد الطلاب</h3>
-                <p>1000+ طالب وطالبة</p>
+                <p>1100+ طالب وطالبة</p>
               </div>
             </div>
           </div>

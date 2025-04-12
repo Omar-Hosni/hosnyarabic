@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logo3 from '../assets/logo3.png'
+import logo5 from '../assets/logo5.png'
 import { useNavigate, useLocation } from 'react-router-dom';
 import { redirectToContact } from '../util/utilFunctions';
 
@@ -65,7 +65,7 @@ function Navbar() {
           onClick={()=>{
             navigate('/')
           }}
-          src={logo3}
+          src={logo5}
           className="w-20 rounded-full hover:cursor-pointer"
         />
 

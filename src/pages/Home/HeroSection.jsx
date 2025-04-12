@@ -2,9 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet'; // Import React Helmet
 import hosny1 from '../../assets/hosny1.jpg';
+import hosny4 from '../../assets/hosny4.jpg';
 import Flag from 'react-world-flags';
 import { redirectToHowToRegister } from '../../util/utilFunctions';
 import { useNavigate } from 'react-router-dom';
+import hero_wallpaper from "../../assets/herowallpaper.png";
+import hero_wallpaper2 from '../../assets/herowallpaper2.png';
+
 
 function HeroSection() {
   const navigate = useNavigate();
@@ -23,7 +27,10 @@ function HeroSection() {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-white via-sky-50 to-sky-100 py-20 overflow-hidden mt-20">
+    <section
+      className="relative py-10 overflow-hidden mt-20 "
+      style={{ backgroundImage: `url(${hero_wallpaper})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
       <Helmet>
         <title>حسني سليمان - أستاذ لغة عربية</title> {/* Custom title for this page */}
         <meta name="description" content="أستاذ لغة عربية لمقررات مصر, السعودية, والبحرين. تعلم الآن مع حسني سليمان." /> {/* Custom description */}
@@ -33,19 +40,34 @@ function HeroSection() {
         </script>
       </Helmet>
 
-      <div className="container mx-auto px-6 ">
+      <div className="container mx-auto px-6 py-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="grid grid-cols-1 md:grid-cols-2 items-center gap-12"
         >
-          <div className="text-right">
-            <p className="text-4xl md:text-5xl font-bold text-sky-800 mb-4 leading-snug">
+        <div className="relative container container-contain">
+            <motion.img
+              src={hosny4}
+              alt="Hero Illustration"
+              className="w-full max-w-md mx-auto drop-shadow-xl scale-85 rounded-xl"
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+            />
+          </div>
+          <div className="container" dir='rtl'>
+            <p className="legend-header text-4xl md:text-5xl font-bold text-sky-300 mb-4 leading-snug">
               حسني سليمان
             </p>
-            <p className="typewriter text-gray-600 mb-6 text-lg leading-relaxed">
-              أستاذ لغة عربية لمقررات مصر , السعودية والبحرين
+            <p className="text-gray-200 mb-6 text-medium leading-relaxed">
+              <span className="block md:inline">
+                أستاذ اللغة العربية 📚 - كل مقررات المراحل الثانوية والإعدادية 🎓
+              </span>
+              <span className="block md:inline">
+                في مصر 🇪🇬 & السعودية 🇸🇦 & البحرين 🇧🇭
+              </span>
             </p>
             <div className="flex gap-6 justify-end mb-6">
               <Flag code="EG" className="w-12 h-8 object-contain" />
@@ -71,16 +93,6 @@ function HeroSection() {
                 اعرف المزيد
               </button>
             </div>
-          </div>
-          <div className="relative">
-            <motion.img
-              src={hosny1}
-              alt="Hero Illustration"
-              className="w-full max-w-md mx-auto drop-shadow-xl"
-              initial={{ scale: 0.9 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
-            />
           </div>
         </motion.div>
       </div>
