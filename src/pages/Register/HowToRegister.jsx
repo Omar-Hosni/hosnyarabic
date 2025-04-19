@@ -57,7 +57,7 @@ const HowToRegister = () => {
         <div className="flex justify-center mt-12">
           <button
             onClick={redirectToTelegram}
-            className="hover:text-sky-600 transition"
+            className="hover:text-sky-600 transition text-black"
           >
             تواصل معنا
           </button>

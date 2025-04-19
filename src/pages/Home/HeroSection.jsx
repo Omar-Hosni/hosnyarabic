@@ -80,7 +80,7 @@ function HeroSection() {
                 onClick={() => {
                   redirectToHowToRegister(navigate);
                 }}
-                className="bg-sky-600 hover:bg-sky-700 text-black font-medium px-6 py-2 rounded-lg transition"
+                className="bg-sky-600 hover:bg-sky-700 text-black font-medium px-6 py-2 rounded-lg hover:scale-110 transition"
               >
                 ابدأ الآن
               </button>
@@ -89,7 +89,7 @@ function HeroSection() {
                   var element = document.getElementById('homepage-videos');
                   element.scrollIntoView();
                 }}
-                className="bg-orange-500 hover:bg-orange-600 text-black font-medium px-6 py-2 rounded-lg transition"
+                className="bg-orange-500 hover:bg-orange-600 text-black font-medium px-6 py-2 rounded-lg hover:scale-110 transition"
               >
                 اعرف المزيد
               </button>
